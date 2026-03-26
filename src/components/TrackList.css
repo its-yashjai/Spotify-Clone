@@ -1,0 +1,158 @@
+.tracklist {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.tracklist__header {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 60px;
+  padding: 4px 16px;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  align-items: center;
+}
+
+.tracklist__divider {
+  border: none;
+  border-top: 1px solid #282828;
+  margin: 8px 16px;
+}
+
+.tracklist__row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 60px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.1s;
+  gap: 0;
+}
+
+.tracklist__row:hover {
+  background: #282828;
+}
+
+.tracklist__row--active {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tracklist__col {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.tracklist__col--num {
+  justify-content: center;
+  font-size: 14px;
+  color: #b3b3b3;
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.tracklist__col--title {
+  gap: 12px;
+  min-width: 0;
+}
+
+.tracklist__col--album {
+  min-width: 0;
+}
+
+.tracklist__col--duration {
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+.tracklist__num {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.tracklist__num--active {
+  color: #1db954;
+  font-size: 14px;
+}
+
+.tracklist__play-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.tracklist__playing-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tracklist__thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.tracklist__title-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+}
+
+.tracklist__title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tracklist__title--active {
+  color: #1db954;
+}
+
+.tracklist__artist {
+  color: #b3b3b3;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tracklist__album {
+  color: #b3b3b3;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tracklist__duration {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.explicit-badge {
+  background: #b3b3b3;
+  color: #121212;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 2px;
+  letter-spacing: 0;
+  flex-shrink: 0;
+}

@@ -1,0 +1,121 @@
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #121212;
+  scrollbar-width: thin;
+  scrollbar-color: #535353 transparent;
+  position: relative;
+}
+
+.main-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background: #535353;
+  border-radius: 4px;
+}
+
+.main-content__inner {
+  padding: 0 32px 32px;
+}
+
+/* Quick Access (greeting + recently played tiles) */
+.quick-access {
+  margin-bottom: 32px;
+  padding-top: 8px;
+}
+
+.quick-access__title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.quick-access__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.quick-play__item {
+  background: #282828;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.1s;
+  height: 64px;
+}
+
+.quick-play__item:hover {
+  background: #3e3e3e;
+}
+
+.quick-play__image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.quick-play__title {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Section */
+.section {
+  margin-bottom: 40px;
+}
+
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section__title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section__see-all {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.1s;
+  padding: 0;
+}
+
+.section__see-all:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 16px;
+}
